@@ -1,0 +1,304 @@
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+  color: #fff;
+}
+
+body {
+  background-color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+img {
+  border: none;
+}
+
+.container {
+  width: 100%;
+  opacity: 0;
+
+  transition: 300ms;
+}
+.container-opacity {
+  opacity: 1;
+}
+
+.center {
+  margin: 0 auto;
+  max-width: 1333px;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+}
+.center.content {
+  display: flex;
+  justify-content: center;
+}
+.top-bar {
+  background-color: #000;
+  padding: 10px 0px;
+}
+
+.movie-details {
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+}
+
+.opacity {
+  background: rgba(51, 51, 51, 0.6);
+  padding-top: 100px;
+}
+
+.poster-container {
+  display: flex;
+  justify-content: center;
+}
+
+.poster-img {
+  -webkit-box-shadow: 0px 10px 13px -7px #000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  margin-bottom: -45px;
+}
+
+.movie-info-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.genre-age {
+  margin-top: 20px;
+  display: block;
+}
+
+.genre-list {
+  display: inline;
+}
+
+.genre {
+  display: inline-block;
+  border: solid 2px #fff;
+  padding: 5px;
+  margin-right: 10px;
+
+  font-weight: bold;
+}
+
+.age {
+  display: inline-block;
+  background-color: #ec1d25;
+  padding: 5px;
+
+  margin-left: 10px;
+}
+
+.synopsis-p {
+  margin-top: 20px;
+  max-width: 600px;
+
+  text-align: justify;
+  text-justify: auto;
+
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.trailer-container {
+  border: solid 5px #fff;
+}
+.trailer-wrap {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.production-info-container {
+  margin-top: 15px;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 500px;
+}
+
+.production-info-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.production-info {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.production-info span {
+  display: block;
+}
+
+.theater-info {
+  margin-top: 100px;
+  display: flex;
+}
+
+.theater-logo img {
+  width: 80px;
+  height: 45px;
+}
+
+.adress-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #666;
+  margin-top: 10px;
+}
+
+.rooms-container {
+  margin-top: 25px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.room {
+  padding: 20px;
+  max-width: 340px;
+  margin: 10px 30px;
+  background-color: #222;
+}
+
+.room-name {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.hours-container {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fade {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+  background-color: #000;
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.modal-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 3;
+}
+.modal-container-show {
+  display: flex;
+}
+.modal-top {
+  background-color: #202020;
+  text-align: center;
+  padding: 10px;
+  font-size: 26px;
+}
+
+.modal {
+  width: 400px;
+  height: 200px;
+  background-color: #333;
+  text-align: center;
+}
+
+.modal-info {
+  margin-top: 50px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #3478c1;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  margin-top: 50px;
+  height: 200px;
+  background-color: #000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 575.98px) {
+  #background-poster {
+    background: none !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .center.content {
+    flex-direction: column;
+  }
+  .poster-img {
+    margin-bottom: 0;
+  }
+  .production-info-container {
+    max-width: 350;
+  }
+  .movie-info-container {
+    align-items: center;
+    padding-top: 20px;
+  }
+  .room {
+    max-width: 180px;
+
+    margin: 10px 3px;
+  }
+  .trailer-wrap {
+    margin: 30px auto 30px;
+  }
+  .mobile {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1366px) {
+  .opacity {
+    padding-top: 50px;
+  }
+  .room {
+    max-width: 280px;
+    margin: 10px 10px;
+  }
+}

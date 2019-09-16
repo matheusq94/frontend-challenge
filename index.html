@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./renderDom.js"></script>
+    <script src="./app.js"></script>
+  </head>
+
+  <body>
+    <!-- modal -->
+      <div class="modal-container" id="modal-container">
+        <div class="modal">
+          <div class="modal-top">
+            Pré-Venda Disponível!
+          </div>
+          <div class="modal-info" id="modal">
+          </div>
+          <button onClick="closeModal()">OK</button>
+        </div>
+      </div>
+    <div class="fade" id="fade"></div>
+
+     <!-- Barra superior com o logo -->
+    <div class="container" id="wrap">
+      <div class="top-bar">
+        <div class="center mobile">
+          <div class="logo-container">
+            <img src="imgs/logo-ingresso-horizontal.png" width="200" heigth="50"/>
+          </div>
+        </div>
+      </div>
+
+    <!-- Parte com as informações do filme -->
+      <div class="movie-details" id="background-poster">
+        <div class="opacity">
+          <div class="center content">
+            <!-- Poster -->
+            <div class="poster-container">
+              <img class="poster-img" id="poster" src="" width="300" heigth="550">
+            </div>
+            <!-- Container do meio com as infos do filme (nome, sinopse, etc) -->
+            
+            <div class="movie-info-container">
+              <div class="wrapper">
+                <h1 id="title"></h1>
+                <h2 id="originalTitle"></h2>
+                <div class="genre-age" id="genre">
+                  <ul class="genre-list" id="genre-list"></ul>
+                </div>
+                <p class="synopsis-p" id="synopsis"></p>
+
+                <div class="production-info-container">
+                  <div class="production-info-column">
+                    <div class="production-info">
+                      <span>Elenco</span>
+                      <span id="cast"></span>
+                    </div>
+                    <div class="production-info">
+                      <span>País de origem</span>
+                      <span id="country"></span>
+                    </div>
+                  </div>
+                
+                  <div class="production-info-column">
+                    <div class="production-info">
+                      <span>Dirigido por</span>
+                      <span id="director"></span>
+                    </div>
+                    <div class="production-info">
+                      <span>Distribuidor</span>
+                      <span id="distributor"></span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+           
+              <!-- Trailer -->
+              <div class="trailer-wrap">
+                <iframe id="trailer"  src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- Parte com as informações do cinema -->
+        <div class="center">
+          <div class="theater" id="theater-area">
+          <div class="theater-info">
+            <div class="theater-logo">
+              <img id="theater-logo">
+            </div>
+            <div class="adress-info" id="adress-info">
+              <h3 id="theater-name"></h3>
+              <p id="theater-address"></p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="rooms-container" id="rooms-container"></div>
+          </div>
+
+          
+        </div>
+        <div class="footer">
+          <img src="imgs/logo-ingresso-vertical.png" width="200" heigth="200"/>    
+        </div>
+      
+
+
+
+  </body>
+
+</html> 
